@@ -3,7 +3,7 @@ import random
 
 from flask import Flask, request
 
-cryReasons = ["Belly Pain", "Burping", "Discomfort", "Hungry", "Tired "]
+cryReasons = ["Belly Pain", "Burping", "Discomfort", "Hungry", "Tired"]
 
 app = Flask(__name__)
 
