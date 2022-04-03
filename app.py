@@ -1,13 +1,17 @@
 import os
+import random
 
 from flask import Flask, request
+
+cryReasons = ["Belly Pain", "Burping", "Discomfort", "Hungry", "Tired "]
 
 app = Flask(__name__)
 
 @app.route('/', methods=["POST","GET"])
 def cry_analysis():
     if request.method == "GET":
-        return {"cryReason": "Testing Flask"}
+        cryReason = random.choice(cryReasons)
+        return {"cryReason": cryReason}
     else:
         if request.files:
             crySound = request.files['audio']
