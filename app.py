@@ -22,7 +22,7 @@ def cry_analysis():
         if request.files:
             crySound = request.files['audio']
 
-            crySoundPath=".\\"+os.path.join(crySound.filename)
+            crySoundPath=".\\"+crySound.filename
 
             crySound.save(crySoundPath)
             #TODO Import the crySound to the ML model below
