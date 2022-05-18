@@ -8,7 +8,7 @@ from flask import Flask, request
 
 
 app = Flask(__name__)
-crySoundPath=None
+crySoundPath='.\\cry.wav'
 
 @app.route('/', methods=["POST","GET"])
 def cry_analysis():
