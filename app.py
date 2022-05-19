@@ -15,14 +15,14 @@ def cry_analysis():
     global crySoundPath
     if request.method == "GET":
         #TODO Get last cry reason from db
-        print(crySoundPath)
+        # print(crySoundPath)
         cryReason = model_handler.makePrediction(crySoundPath)
         return {"cryReason": cryReason}
     else:
         if request.files:
             crySound = request.files['audio']
 
-            crySoundPath=".\\"+os.path.join(crySound.filename)
+            # crySoundPath=".\\"+os.path.join(crySound.filename)
 
             crySound.save(crySoundPath)
             #TODO Import the crySound to the ML model below
