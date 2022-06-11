@@ -25,10 +25,8 @@ def cry_analysis():
             # crySoundPath=".\\"+os.path.join(crySound.filename)
 
             crySound.save(crySoundPath)
-            #TODO Import the crySound to the ML model below
-            #TODO Store the cry reason in the db
-        return ""
-
+            cryReason = model_handler.makePrediction(crySoundPath)
+            return {"cryReason": cryReason}
 
 if __name__ == '__main__':
     app.run()
