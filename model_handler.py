@@ -304,8 +304,8 @@ def runModels(
 
 
 def makePrediction(filename):
-    model_path = r".\RandomForestClassifier6SecondsReducedFeatures20BalancedBMCDB.pkl"
-    # model_path = r".\RandomForestClassifier6SecondsReducedFeatures13.pkl"
+    model_path = r"RandomForestClassifier6SecondsReducedFeatures20BalancedBMCDB.pkl"
+    # model_path = r"RandomForestClassifier6SecondsReducedFeatures13.pkl"
 
     # load the models
     rfc_6s_rf20 = getModel(model_path)
@@ -324,8 +324,8 @@ def makePrediction(filename):
 
 def denoiseAndMakePrediction(filename):
 
-    model_path = r".\RandomForestClassifier6SecondsReducedFeatures20BalancedBMCDB.pkl"
-    # model_path = r".\RandomForestClassifier6SecondsReducedFeatures13.pkl"
+    model_path = r"RandomForestClassifier6SecondsReducedFeatures20BalancedBMCDB.pkl"
+    # model_path = r"RandomForestClassifier6SecondsReducedFeatures13.pkl"
 
     # load the models
     rfc_6s_rf20 = getModel(model_path)
